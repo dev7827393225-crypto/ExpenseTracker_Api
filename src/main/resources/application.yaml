@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: ExpenseTrackerApi
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/USERDATABASE
+    username: root
+    password: Dev@1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
+
+  jackson:
+    date-format: MM/dd/yyyy
+
+server:
+  port: 8080
+
+
+
+
+
